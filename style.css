@@ -116,6 +116,20 @@ header {
     margin: 0 auto 30px;
 }
 
+
+.a-propos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.a-propos p{
+    width: 50%;
+    
+}
+
         
       
         .wildlife {
