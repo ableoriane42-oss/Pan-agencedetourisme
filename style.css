@@ -129,7 +129,16 @@ header {
     width: 50%;
     
 }
-
+.a-propos img{
+    height: 50%;
+}
+ .btn-1{
+    background-color: #f5a623;
+    color: white;
+    height: 40%;
+   text-decoration: none;
+   border-radius: 10px;
+ }
         
       
         .wildlife {
@@ -155,6 +164,7 @@ header {
             text-align: center;
             font-size: 3em;
             margin-bottom: 20px;
+            margin-top: 50px;
         }
         
         .animal-card:hover {
