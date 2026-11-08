@@ -1,31 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIENVENUE EN CÔTE D'IVOIRE - Land of Mountain Gorillas</title>
+    <title>PAN – Bienvenue en Côte d'Ivoire</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alice&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header with Navigation -->
+    <!-- Header avec navigation -->
     <header>
         <nav>
-            <div class="container">
-                <ul>
+            <div class="container nav-container">
+                <a href="#home" class="logoBaniere">
+                    <img src="image/logo.png" alt="Logo PAN"> <span>PAN</span>
+                </a>
 
-                    <li class="logoBaniere">
-                        <a href="#"><img src="/image/logo.png" alt="Logo"> PAN</a>
-                    </li>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"
+                    aria-controls="nav-links">
+                    <span></span><span></span><span></span>
+                </button>
 
-
-                    <div style="display: flex; align-items: center;">
-                        <li><a href="#home">Accueil</a></li>
-                        <li><a href="#about">Destination</a></li>
-                        <li><a href="#gorillas">À propos</a></li>
-                        <li><a href="#parks">Contact</a></li>
-                    </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#about">Destination</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -34,22 +40,18 @@
             <h1>Découvrez la Côte d'Ivoire, terre de richesses et de merveilles</h1>
             <p>Des plages paradisiaques aux paysages naturels, en passant par une culture vibrante et des traditions
                 authentiques, vivez des expériences inoubliables au cœur de l'Afrique de l'Ouest.</p>
-            <a href="#gorillas" class="btn-1">Explorez la Côte d'Ivoire</a>
+            <a href="#about" class="btn-1">Explorez la Côte d'Ivoire</a>
         </div>
     </header>
 
-
-    <!-- About Côte d'ivoire Section -->
-
-
-    <!-- Wildlife Section -->
+    <!-- Destinations -->
     <section id="wildlife" class="wildlife">
         <div class="container">
             <h2 class="section-title" id="about">Destination</h2>
             <div class="animals-grid">
                 <div class="animal-card">
                     <div class="animal-image">
-                        <img src="image/Assinie.jpg" alt="Mountain Gorilla">
+                        <img src="image/Assinie.jpg" alt="Plage d'Assinie" loading="lazy">
                     </div>
                     <div class="animal-info">
                         <h3>Assinie – Entre mer et lagune</h3>
@@ -61,7 +63,7 @@
 
                 <div class="animal-card">
                     <div class="animal-image">
-                        <img src="image/bassam.jpg" alt="Golden Monkey">
+                        <img src="image/bassam.jpg" alt="Grand-Bassam" loading="lazy">
                     </div>
                     <div class="animal-info">
                         <h3>Grand-Bassam – Au cœur de l'histoire</h3>
@@ -73,71 +75,62 @@
 
                 <div class="animal-card">
                     <div class="animal-image">
-                        <img src="image/man (2).jpg" alt="African Elephant">
+                        <img src="image/man (2).jpg" alt="Montagnes de Man" loading="lazy">
                     </div>
                     <div class="animal-info">
                         <h3>Man – La beauté des montagnes</h3>
                         <p>Laissez-vous séduire par les paysages montagneux de Man, ses cascades naturelles et sa
                             végétation luxuriante. Une destination parfaite pour les amoureux de nature et d'aventure.
                         </p>
-
                     </div>
                 </div>
 
                 <div class="animal-card">
                     <div class="animal-image">
-                        <img src="image/LA BASELIQUE.jpg" alt="Lion">
+                        <img src="image/LA BASELIQUE.jpg" alt="Basilique de Yamoussoukro" loading="lazy">
                     </div>
                     <div class="animal-info">
                         <h3>Yamoussoukro – Entre culture et patrimoine</h3>
                         <p>Partez à la découverte de la capitale politique ivoirienne, célèbre pour sa majestueuse
                             basilique Notre-Dame de la Paix et son patrimoine architectural.</p>
-
                     </div>
                 </div>
 
                 <div class="animal-card">
                     <div class="animal-image">
-                        <img src="image/SAN PEDRO.jpg" alt="Hippopotamus">
+                        <img src="image/SAN PEDRO.jpg" alt="Plage de San Pedro" loading="lazy">
                     </div>
                     <div class="animal-info">
                         <h3>San Pedro – L'évasion au bord de l'océan</h3>
                         <p>Découvrez les magnifiques plages de San Pedro, son atmosphère côtière et ses paysages
                             naturels. Une destination idéale pour profiter de la mer et découvrir le sud-ouest ivoirien.
                         </p>
-
                     </div>
                 </div>
 
                 <div class="animal-card">
                     <div class="animal-image">
-                        <img src="image/Abidjan.jpg" alt="Chimpanzee">
+                        <img src="image/Abidjan.jpg" alt="Abidjan" loading="lazy">
                     </div>
                     <div class="animal-info">
                         <h3>Abidjan – La perle des lagunes</h3>
-                        <p> Explorez la capitale économique ivoirienne, entre modernité, gastronomie, vie culturelle et
+                        <p>Explorez la capitale économique ivoirienne, entre modernité, gastronomie, vie culturelle et
                             paysages lagunaires. Une ville dynamique qui offre de nombreuses expériences à découvrir.
                         </p>
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gorilla Tracking Section -->
-    <section id="gorillas" class="gorilla-tracking">
-        <div class="container">
-            <h2 class="section-title  opacity"></h2>
-
-        </div>
+    <!-- Bandeau décoratif -->
+    <section id="gorillas" class="gorilla-tracking" aria-hidden="true">
+        <div class="container"></div>
     </section>
 
     <!-- À propos -->
-     <h2 class="section-title">A Propos</h2>
+    <h2 class="section-title" id="apropos">À propos</h2>
     <section class="a-propos">
-   
-
         <p>
             PAN est une agence touristique ivoirienne dédiée à la découverte et à la valorisation des richesses de la
             Côte d'Ivoire. Notre mission est d'offrir à chaque client une expérience unique alliant découverte, détente
@@ -146,20 +139,18 @@
             Nous avons pour vision de devenir une agence de renom dans le secteur du tourisme en Côte d'Ivoire, reconnue
             pour la qualité de ses services, son innovation et son engagement à promouvoir les destinations ivoiriennes.
             Notre activité repose sur des valeurs essentielles : le professionnalisme, l'excellence, l'innovation, la
-            proximité avec nos clients, le respect de la culture ivoirienne et la satisfaction de chaque voyageur..
+            proximité avec nos clients, le respect de la culture ivoirienne et la satisfaction de chaque voyageur.
             <br> <br>
             À travers PAN, nous souhaitons faire de chaque voyage une expérience authentique, enrichissante et
             inoubliable.
         </p>
-        <img src="/image/ACCUEIL.jpg" alt="">
+        <img src="image/ACCUEIL 3).jpg" alt="Voyageurs en Côte d'Ivoire" loading="lazy">
     </section>
 
-
-
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Votre Plan d'anventure en Côte d'ivoire</h2>
+            <h2 class="section-title">Votre plan d'aventure en Côte d'Ivoire</h2>
             <div class="contact-form">
                 <form>
                     <div class="form-group">
@@ -178,18 +169,18 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="interest">Primary Interest</label>
+                        <label for="interest">Centre d'intérêt</label>
                         <select id="interest" name="interest" class="form-control">
-                            <option value="gorilla">Gorilla Trekking</option>
-                            <option value="safari">Wildlife Safari</option>
-                            <option value="culture">Cultural Experiences</option>
-                            <option value="hiking">Hiking & Nature</option>
-                            <option value="other">Other</option>
+                            <option value="plage">Plages & détente</option>
+                            <option value="histoire">Histoire & patrimoine</option>
+                            <option value="nature">Nature & montagnes</option>
+                            <option value="culture">Culture & gastronomie</option>
+                            <option value="other">Autre</option>
                         </select>
                     </div>
 
                     <div class="form-group">
-                        <label for="message">Votre Message</label>
+                        <label for="message">Votre message</label>
                         <textarea id="message" name="message" required></textarea>
                     </div>
 
@@ -207,10 +198,10 @@
                     <h3>PAN – Tourisme & Découverte</h3>
                     <p>Partez à la découverte des merveilles de la Côte d'Ivoire.</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-tik"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
 
@@ -219,31 +210,51 @@
                     <ul>
                         <li><a href="#home">Accueil</a></li>
                         <li><a href="#about">Destination</a></li>
-                        <li><a href="#aPropos">À propos</a></li>
-                        <li><a href="#gorillas">Contact</a></li>
-
+                        <li><a href="#apropos">À propos</a></li>
+                        <li><a href="#contacts">Contact</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-section">
+                <div class="footer-section" id="contacts">
                     <h3>Informations de contact</h3>
                     <ul>
                         <li>PAN – Tourisme en Côte d'Ivoire</li>
-
                         <li>Abidjan, Côte d'Ivoire</li>
-                        <li>Téléphone: +225 0103213428</li>
-                        <li>Email: pantourisme@gmail.com</li>
+                        <li>Téléphone : <a href="https://wa.me/2250103213428" target="_blank" rel="noopener">+225 0103213428</a></li>
+                        <li>Email : <a href="mailto:ableoriane42@gmail.com">ableoriane42@gmail.com</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="copyright">
-                <p>&copy; © 2026 PAN Tourisme. Tous droits réservés.</p>
+                <p>&copy; 2026 PAN Tourisme. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Font Awesome for icons -->
+    <!-- Menu mobile -->
+    <script>
+        (function () {
+            var btn = document.getElementById('menu-toggle');
+            var menu = document.getElementById('nav-links');
+
+            function setOpen(open) {
+                menu.classList.toggle('open', open);
+                btn.classList.toggle('active', open);
+                btn.setAttribute('aria-expanded', open);
+            }
+
+            btn.addEventListener('click', function () {
+                setOpen(!menu.classList.contains('open'));
+            });
+
+            menu.querySelectorAll('a').forEach(function (a) {
+                a.addEventListener('click', function () { setOpen(false); });
+            });
+        })();
+    </script>
+
+    <!-- Font Awesome pour les icônes -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 
